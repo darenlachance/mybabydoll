@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body class="bodyvirtuel">
+
+<!--
+    <div>
+        <ul class="menu">
+            <li class="fas fa-bars"></li>
+            <li><a href="index1.html">acceuil</a></li>
+            <li><a href="profil.html">profil</a></li>
+            <li><a href="forum.html">forum</a></li>
+            <li><a href="moteur.html">moteur</a></li>
+            <li><a href="quiz.html">quiz</a></li>
+            <li><a href="A virtuel.html">A virtuel</a></li>
+            
+            <li class="fas fa-search" onclick="affichersearch()"></li>
+            <li><a href="">espace administrateur</a></li>
+        </ul>
+    </div>
+
+
+    <div class="recherche">
+        <li class="fas fa-times" onclick="fermersearch()"></li>
+        <input class="texte" type="text" placeholder="search">
+        <input type="button" value="rechercher">
+    </div>
+-->
+
+   
+
+    <section class="sectionvirtuel">
+
+        <header class="headervirtuel">
+            Bienvenue A vous je m'appelle babydoll
+          </header>
+
+
+
+        <p class="nomvirtuel">BABYDOLL</p>
+       <img class="imgvirtuel" src="botfeminin5.jpg" width="300px" height="300px">
+ <div class="introbabydoll">salut mon nom est babydoll et je suis l'assistante personnel 
+de daren,comment puis-je vous aider?<br>si ceci est la première fois que vous m'utilisez alors 
+            veuillez taper la commande suivante: AFFICHER LA LISTE DES COMMANDES</div>
+
+        <ul class="ul"></ul>
+        <textarea class="writevirtuel" placeholder="tapez votre commande"></textarea>
+     <input type="button" value="valider" class="validerwritevirtuel">
+     
+     <p></p>
+     <p></p>
+     
+    
+     <button class="btnvocalsave">voice</button>
+     <button class="btnvocalstop">stop</button>
+     
+
+     <div class="zonechat"></div>
+     <div class="reponsebabydoll"></div>
+     <div class="chargementmsg"></div>
+     <!--<div class="newmsge"></div>-->
+
+
+
+
+     <!--CREER UN EVENEMENT POUR L'AGENDA-->
+     <div class="creereventvirtuel">
+        <p class="nouvelevent">NOUVEL EVENEMENT</p>
+     <input type="text" class="dateevent" placeholder="date de l'evenement">
+     <textarea class="event" placeholder="evenement"></textarea>
+     <input type="button" class="validerevent" value="valider event">
+     <input type="button" class="annulerevent" value="annuler event">
+    </div>
+
+     <!--L'AGENDA VIRTUEL-->
+     <div class="agendavirtuel">
+      <p class="nomagenda">AGENDA virtuel:</p>
+     </div>
+
+
+
+     <!--ENVIRONRMENT POUR L'ENVOI DE MESSAGE WHATSAPP-->
+     <div class="whatsapp">
+         <P>MESSAGE whatsapp<img src="whatsapp.png" width="50px" height="50px"></P>
+         <input type="text" class="numero" placeholder="inserez le numero auxquel vous souhaitez ecrire">
+         <textarea class="messagewha" placeholder="veuillez saisir le message que vous souhaitez envoyer"></textarea>
+         <input type="button" class="sendmsgwha" value="envoyer">
+
+     </div>
+
+
+
+
+
+
+
+   <!--FONCTION POUR PASSER DES APPELS-->
+    <div class="appeltelephonique">
+        <input type="text" class="numeroappel" placeholder="veuillez entrer le numero">
+        <input type="button" class="lancerappel" value="Lancer Appel">
+     </div>
+
+
+ <!--FONCTION POUR QUE BABYDOLL AFFICHE SA PHOTO-->
+ <div class="photobabydoll">
+    <img src="botfeminin2.jpg" width="250px" height="300px">
+ </div>
+
+
+ <!--FONCTION POUR LA METEO-->
+ <div class="espacemeteo">
+     ESPACE METEO
+
+
+    <div class="form">
+        <input type="text" id="inputcity" placeholder="veuillez entrer la ville">
+        <input type="submit" class="submitmeteo" value="get météo">
+    </div>
+    
+     <div class="meteo">
+        <div id="city"></div>
+        <div id="temp"></div>
+        <div id="humidity"></div>
+        <div id="wind"></div>
+     </div>
+
+
+
+
+ </div>
+
+
+
+
+ <!--FONCTION POUR YOUTUBE-->
+ <div class="espaceyoutube"> 
+ESPACE YOUTUBE
+
+    <form id="youtubeform">
+        <input type="text" id="searchyoutube" placeholder="rechercher une video">
+        <input type="submit" class="submityoutube" value="get video youtube">
+    </form>
+    
+    <div class="youtube">
+        <div id="youtuberesult"></div>
+     </div>
+
+
+
+ </div>
+ 
+
+
+
+ <!--FONCTION POUR GOOGLE-->
+<form id="googleform">
+
+    <div>
+        google search
+     </div>
+
+    <div id="formsearch">
+        <input type="text" id="searchgoogle" placeholder="faites votre recherche">
+        <input type="submit" id="submitgoogle" value="get google">
+    </div>
+    
+    <div id="googleresult">
+    
+    </div>
+
+</form>
+
+
+
+
+<!--FONCTION GOOGLE2-->
+<div class="googleform2">
+
+    <script async src="https://cse.google.com/cse.js?cx=11e8fc3ecdfee37f4"></script>
+<div class="gcse-search"></div>
+
+</div>
+ 
+
+
+<!--FONCTION POUR LES MESSAGES-->
+<div class="espacesms">
+ESPACE SMS
+
+    <input type="text" id="messageAenvoyer" placeholder="veuillez entrez votre message">
+    <input type="button" value="envoyer votre message" onclick="envoyersmstwilio()">
+
+
+</div>
+
+
+
+
+ <!--FONCTION POUR LE QUIZ-->
+ <div class="container">
+     <div class="quiz">
+         <h1><span>Q</span>UIZ</h1>
+
+         <h2 id="question"></h2>
+         <h3 id="score"></h3>
+
+         <div class="choices">
+
+            <button id="guess0" class="btn">
+             <p id="choice0"></p>
+            </button>
+
+            <button id="guess1" class="btn">
+                <p id="choice1"></p>
+               </button>
+
+               <button id="guess2" class="btn">
+                <p id="choice2"></p>
+               </button>
+
+               <button id="guess3" class="btn">
+                <p id="choice3"></p>
+               </button>
+
+         </div>
+
+         <p id="progress"></p>
+     </div>
+ </div>
+ 
+
+
+
+
+    </section>
+
+    <aside class="asidevirtuel">
+
+    </aside>
+
+   
+
+    <a href="tel:+237656316569">appel</a>
+
+    
+
+
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="app1.js"></script>
+</body>
+</html>
